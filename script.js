@@ -24,7 +24,7 @@ const handleOnMove = (e) => {
     {
       transform: `translate(${nextPercentage}%, -50%)`,
     },
-    { duration: 2500, fill: "forwards" }
+    { duration: 50000, fill: "forwards" }
   );
 
   for (const image of track.getElementsByClassName("image")) {
@@ -32,7 +32,7 @@ const handleOnMove = (e) => {
       {
         objectPosition: `${100 + nextPercentage}% center`,
       },
-      { duration: 2500, fill: "forwards" }
+      { duration: 50000, fill: "forwards" }
     );
   }
 };
